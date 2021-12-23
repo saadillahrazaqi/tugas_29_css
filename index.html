@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
- <head>
-       <meta charset="utf-8" />
-       <title>Tugas CSS - Niomic</title>
+<head>
+      <meta charset="utf-8" />
+      <title>Tugas CSS - Niomic</title>
 
-       <!-- Online File -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="semantic.min.css">
 
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'>
 
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+      <style type="text/css">
+            body {
+                  background: #DADADA;
+            }
 
-       <style>
-             form {
-                  background-color: white;
-                  padding: 15px;
-             }
+            body > .grid {
+                  height: 100%;
+            }
 
-             .container {
-                  margin: 0 auto;
-             }
+            .column {
+                  max-width: 450px;
+            }
+      </style>
 
-             .input-group-text {
-                  background-color: white;
-             }
-       </style>
-
- </head>
- <body style="background-color: #DADADA;">
-      <div class="container mt-5">
-            <div class="row text-center">
-                  <div class="col">
-                        <img src="niomic.png" width="75px">
-                        <label class="h2 text-info align-middle">Daftar Akun NIOMIC</label>
-                  </div>        
-            </div>
-            <div class="row justify-content-center mt-3">
-                  <div class="col-md-6">
-                        <form>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Nama Depan">
-                            </div>
-                            <div class="input-group mt-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Nama Belakang">
-                            </div>
-                            <div class="input-group mt-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="tel" class="form-control" placeholder="No Telp / HP">
-                            </div>
-                            <div class="input-group mt-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-user"></i></span>
-                                </div>
-                                <input type="email" class="form-control" placeholder="Alamat Email">
-                            </div>
-                            <div class="input-group mt-3">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                </div>
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-info btn-block mt-3">Login</button>
-                        </form>
-                  </div>        
-            </div>
+</head>
+<body>
+      
+      <div class="ui middle aligned center aligned grid">
+            <div class="column">
+                  <h2 class="ui teal image header">
+                        <img class="image" src="niomic.png">
+                        <div class="content">
+                              Daftar Akun NIOMIC
+                        </div>
+                  </h2>
+                  <form class="ui large form">
+                        <div class="ui stacked segment">
+                              <div class="field">
+                                  <div class="ui left icon input">
+                                        <input type="text" name="nama-depan" placeholder="Nama Depan">
+                                        <i class="user icon"></i>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui left icon input">
+                                        <input type="text" name="nama-belakang" placeholder="Nama Belakang">
+                                        <i class="user icon"></i>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui left icon input">
+                                        <input type="tel" name="no-telp" placeholder="No Telp / HP">
+                                        <i class="user icon"></i>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui left icon input">
+                                        <input type="email" name="alamat-email" placeholder="Alamat Email">
+                                        <i class="user icon"></i>
+                                  </div>
+                              </div>
+                              <div class="field">
+                                  <div class="ui left icon input">
+                                        <input type="password" name="no-telp" placeholder="Password">
+                                        <i class="lock icon"></i>
+                                  </div>
+                              </div>
+                              <div class="ui fluid large teal submit button">Login</div>
+                        </div>                       
+                  </form>
+            </div>    
       </div>
-     
- </body>
+
+     <script src="semantic.min.js"></script>
+
+</body>
 </html>
